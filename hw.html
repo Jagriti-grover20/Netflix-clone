@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>VIDEO USING JS</title>
+</head>
+<body style="background-color: rgb(201, 12, 12) ;">
+    <div style="color: red; background-color: aliceblue;text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <h1> MAKE YOU WORTHWHILE</h1>
+    </div>
+    <br>
+    
+    <br>
+    <center>
+    <div style=""> 
+    
+    <video id="video1" width="720">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+ 
+
+
+      
+  
+ <br>
+        <button onclick="playpause()"><img src="https://cdn3.iconfinder.com/data/icons/multimedia-and-media-player-solid/48/Artboard_14-512.png"
+             alt="" style="width: 30px; height:30px; " > </button>
+        <button onclick="makebig()"><img src="http://cdn.onlinewebfonts.com/svg/img_421287.png" 
+        style="width: 30px; height:30px ;" alt=""></button>
+        <button onclick="makesmall()"><img src="https://tse4.mm.bing.net/th?id=OIP.b4caiuR3vDw3RtzWZ42mYgHaHa&pid=Api&P=0" 
+        alt=""  style="width: 30px; height:30px ;"> </button>
+        <button onclick="makenormal()"><img src="https://tse2.mm.bing.net/th?id=OIP.DPVoOm7_doE4_11i432M2AHaHZ&pid=Api&P=0"
+         alt=""  style="width: 30px; height:30px ;"> </button>
+        <br>   
+  <br>
+</center>
+</div>
+<script>
+        var myvideo=document.getElementById("video1");
+
+        function playpause()
+        {
+            if (myvideo.paused)
+            myvideo.play();
+            else
+            myvideo.pause();
+        }
+        function makebig()
+        {
+            myvideo.width=860;
+        }
+        function makesmall()
+        {
+            myvideo.width=320;
+        }
+        function makenormal()
+        {
+            myvideo.width=720;
+        }
+    </script>
+  
+    
+    <div style=" font-family: Verdana, Geneva, Tahoma, sans-serif; color: red; background-color:white; text-align: center;">
+    <H2> FOR YOU </H2>
+    </div>
+</body>

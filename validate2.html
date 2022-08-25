@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Validation 2</h1>
+    <p>Please Enter a number between 1 and 10</p>
+    <input id="num">
+    <button type="button" onclick="myFunction()">SUBMIT</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            let x=document.getElementById("num").value;
+            let text;
+            if(isNaN(x) || x < 1 || x > 10){
+                text="Invalid";
+            }
+            else{
+                text="Ok";
+            }
+            document.getElementById("demo").innerHTML=text;
+        }
+    </script>
+</body>
+</html>

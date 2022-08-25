@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var colors=["red","yellow","pink","magenta"];
+    document.write("ALL ELEMENTS" + "<br>");
+    for(var i of colors ){
+        document.write(i + "<br>");
+    }
+    var back=colors.pop();
+    document.write("DELETION AT END" + "<br>");
+    document.write(back + "<br>");
+    document.write(colors.length + "<br>");
+    var first=colors.shift();
+    document.write("DELETION AT BEGIN" + "<br>");
+    document.write(first +"<br>");
+    document.write("PRINTING ALL ELEMENTS" + "<br>");
+    for(var i of colors ){
+        document.write(i + "<br>");
+    }
+</script>
+</body>
+</html>

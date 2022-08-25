@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align:center">
+    <button type="button" onclick="playPause()"> plau</button>
+    <button onclick="makebig()"></button>
+    <button onclick="makesmall()"></button>
+    <button onclick="makeNormal()"></button>
+    <br>
+    <video id="myvideo">
+        <!-- <source src="https://in.video.search.yahoo.com/search/video;_ylt=AwrKC1IC0P1iMjILowrmHAx.;_ylu=c2VjA3NlYXJjaAR2dGlkAw--;_ylc=X1MDMjExNDcyMzA0NgRfcgMyBGFjdG4DY2xrBGNzcmNwdmlkAzNuajQ3akV3TGpKdDNRRE9ZdnFBNWdBck1UQXpMZ0FBQUFCZlBvWXgEZnIDbWNhZmVlBGZyMgNzYS1ncARncHJpZANTaUNpd3cyVFM1eVJHY3ppWDVTWXpBBG5fcnNsdAM2MARuX3N1Z2cDMTAEb3JpZ2luA2luLnZpZGVvLnNlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMEcXN0cmwDMjEEcXVlcnkDbW90aXZhdGlvbmFsJTIwdmlkZW9zBHRfc3RtcAMxNjYwODAxMDA1?p=motivational+videos&ei=UTF-8&fr2=p%3As%2Cv%3Av%2Cm%3Asa&fr=mcafee&type=E211IN826G0#id=4&vid=4aa11e426e05137b9fcce9f5bf27914a&action=view0" -->
+      
+        <!-- type="video/mp4"> -->
+    <source src="video.mp4" type="video/mp4">
+    </video>
+    </div>
+
+    <script>
+        var videoo=document.getElementById("myvideo");
+        function playPause(){
+            if(videoo.paused){
+                videoo.play();
+            }
+            else{
+                videoo.pause();
+            }
+        }
+
+function makebig(){
+    videoo.width=400;
+}
+function makesmall(){
+    videoo.width=200;
+}
+function makeNormal(){
+    videoo.width=350;
+}
+
+
+    </script>
+
+</body>
+</html>
